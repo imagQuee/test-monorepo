@@ -1,0 +1,10 @@
+{
+    "name": "@test/components",
+    "version": "0.0.1",
+    "description": "This is a test monorepo component package",
+    "main": "index.ts",
+    "private": true,
+    "keywords": [],
+    "author": "Quee",
+    "license": "ISC"
+}

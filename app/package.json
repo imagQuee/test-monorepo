@@ -1,0 +1,25 @@
+{
+    "name": "@test/app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev:local": "NEXT_PUBLIC_ENV=local next dev -p 3005",
+        "dev:custom:server": "nodemon",
+        "build": "yarn prettier && next build",
+        "start": "next start -p 3005",
+        "start:docker": "docker build -t test-app . && docker run -p 3005:3005 test-app",
+        "release": "standard-version",
+        "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss}' 'cypress/**/*.{js,jsx,ts,tsx}' '__tests__/**/*.{js,jsx,ts,tsx}'",
+        "lint": "next lint --config ./.eslintrc.json",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run --component",
+        "cypress:e2e": "cypress run --config video=false",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "test:coverage": "jest --coverage"
+    },
+    "dependencies": {
+        "@test/utils": "*",
+        "@test/components": "*"
+    }
+}

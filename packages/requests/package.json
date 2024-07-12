@@ -1,0 +1,13 @@
+{
+    "name": "@test/requests",
+    "version": "0.0.1",
+    "description": "This is a test monorepo api creator package",
+    "main": "index.ts",
+    "private": true,
+    "keywords": [],
+    "author": "Quee",
+    "license": "ISC",
+    "dependencies": {
+        "@test/utils": "*"
+    }
+}

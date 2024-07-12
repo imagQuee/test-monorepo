@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interview-cathay-united-bank.vercel.app/api/sitemap.xml

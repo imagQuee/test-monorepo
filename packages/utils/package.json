@@ -1,0 +1,10 @@
+{
+    "name": "@test/utils",
+    "version": "0.0.1",
+    "description": "This is a test monorepo utilities package",
+    "main": "index.ts",
+    "private": true,
+    "keywords": [],
+    "author": "Quee",
+    "license": "ISC"
+}

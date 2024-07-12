@@ -1,0 +1,28 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "types": [
+            "node",
+            "jest",
+            "@testing-library/jest-dom"
+        ],
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/**/*"
+, "src/components/CustomElement/Calendar"    ],
+    "exclude": [
+        "node_modules",
+        // separate cypress from jest
+        "cypress",
+        "cypress.d.ts",
+        "cypress.config.ts",
+    ]
+}
